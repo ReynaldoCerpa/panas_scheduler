@@ -6,13 +6,20 @@
 
 body {
     min-height: 100vh;
+    background-color: black;
+    color: whitesmoke;
     font-size: 3rem;
 }
 
 nav {
     padding: 1rem;
     background-color: #44B78B;
+    color: white;
     font-size: 2rem;
+}
+
+nav a {
+    color: white
 }
 
 main {
@@ -34,13 +41,13 @@ p {
     font-size: 1rem;
 }
 
-a {
-    text-decoration: none;
-    color: #81dbb8;
+a:hover {
+    opacity: .75;
 }
 
-a:hover {
-    opacity: .85;
+a {
+    text-decoration: none;
+    color: white;
 }
 
 .banner {
@@ -101,5 +108,11 @@ a:hover {
 }
 
 .post {
-    border: 3px solid red;
+    background-color:aliceblue; 
+    padding: 1rem
+}
+
+.post a {
+    color: grey;
+    text-decoration: none;
 }
