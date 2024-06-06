@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    New post
+{% endblock %}
+
+{% block content %}
+    <section>
+        <h1>Nueva sesión</h1>
+        <form class='form-with-validation' action="{% url 'posts:new-post' %}" 
+        method='post' enctype='multipart/form-data'>
+            {% csrf_token %}
+            {{ form }}
+            <button class='form-submit'>Agregar</button>
+        </form>
+    </section>
+{% endblock %}
